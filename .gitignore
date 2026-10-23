@@ -1,0 +1,32 @@
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+*~
+.vscode/
+.idea/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Node Dependencies & Build Outputs
+node_modules/
+dist/
+build/
+.cache/
+
+# PlatformIO & Embedded Builds
+.pio/
+.piolibdeps/
+*.bin
+*.elf
+*.hex
+
+# Archives
+*.zip
+*.tar.gz
