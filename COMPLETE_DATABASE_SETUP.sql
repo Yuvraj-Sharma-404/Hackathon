@@ -157,3 +157,4 @@ ON CONFLICT (id) DO UPDATE SET
     measured_weight = EXCLUDED.measured_weight,
     expected_weight = EXCLUDED.expected_weight,
     locked = EXCLUDED.locked;
+

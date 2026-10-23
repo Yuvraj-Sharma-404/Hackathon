@@ -1,0 +1,12 @@
+{
+  "name": "raise-self-checkout-kiosk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RAISE standalone smart self-checkout kiosk terminal with WebAssembly barcode decoding and Raspberry Pi hardware bridges",
+  "type": "module",
+  "scripts": {
+    "start": "python -m http.server 8080",
+    "serve": "npx serve -l 8080 .",
+    "test": "node --test tests/*.test.mjs"
+  }
+}
