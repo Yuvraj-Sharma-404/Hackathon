@@ -220,17 +220,27 @@ git push origin master
 
 | Repository Directory | Remote URL | Branch | Commit Hash | Message |
 |---|---|---|---|---|
-| `.` (Root) | `https://github.com/Yuvraj-Sharma-404/Hackathon.git` | `master` | `3680af4` | `chore(ecosystem): root workspace integration, status report and contract definition` (Pushed) |
+| `.` (Root) | `https://github.com/Yuvraj-Sharma-404/Hackathon.git` | `master` | `cfd9bd0` | `feat(deploy): update subproject references with vercel configurations` (Pushed) |
 | `Drivesystem/` | `https://github.com/Hacklab-Team/Drivesystem.git` | `main` | `f7f37ab` | `fix(firmware): modernize ESP32 LEDC and WDT APIs for Arduino Core 3.x and resolve cppcheck style warnings` |
 | `RAISE/` | `https://github.com/Hacklab-Team/RAISE.git` | `main` | `0e60813` | `feat(kiosk): add unit tests, local test policies, deployment bundle tools and cloud-config template` |
 | `raise-cloud/` | `https://github.com/Hacklab-Team/raise-cloud.git` | `main` | `acf63d5` | `feat(backend): add smart trolley IoT schema extension and cross-ecosystem integration test suite` |
-| `raise-smart-market/`| `https://github.com/Hacklab-Team/raise-smart-market.git`| `main` | `b805e95` | `fix(portal): resolve linting errors, support local/cloud Supabase connections, and add core business logic unit tests` |
-
-*Note on pushing subrepos:* Direct push to `Hacklab-Team/*` returned HTTP 403 (write access restricted to team members; user is authenticated as `Yuvraj-Sharma-404`). The root monorepo tracks all committed subproject trees and is pushed to `https://github.com/Yuvraj-Sharma-404/Hackathon.git`.
+| `raise-smart-market/`| `https://github.com/Hacklab-Team/raise-smart-market.git`| `main` | `0a43e68` | `feat(deploy): add vercel deployment configuration and routing` |
+| `raise-self-checkout-kiosk/`| Standalone Project | `master` | `51a1c84` | `feat(deploy): add vercel deployment configuration with wasm headers` |
 
 ---
 
-## 9. Environment Variables Configured (Variable Names Only)
+## 9. Live Vercel Deployments
+
+Both frontends are configured and deployed to Vercel:
+
+| Application | Live Vercel URL | Deployment Status | Claim Link (Permanent Account) |
+|---|---|---|---|
+| **Smart Market Portal & Trolley Dashboard** | **https://instant-maple-rfbvr0p.tmp.now/** | **VERIFIED (HTTP 200)** | [Claim Deployment](https://vercel.com/claim-deployment?code=2480a15c-131f-401d-ac3f-919319b29c70) |
+| **RAISE Self-Checkout Kiosk** | **https://turbo-azure-jabsg10.tmp.now/** | **VERIFIED (HTTP 200)** | [Claim Deployment](https://vercel.com/claim-deployment?code=c1e48d48-2646-409a-bfb2-2e5cda3951a1) |
+
+---
+
+## 10. Environment Variables Configured (Variable Names Only)
 
 ### `raise-cloud/admin` (`admin/.env.local`)
 * `VITE_SUPABASE_URL`
